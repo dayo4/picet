@@ -68,23 +68,13 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: `https://graphql.contentful.com/content/v1/spaces/${process.env.NUXT_PUBLIC_CONTENTFUL_SPACE_ID}/environments/master`,
+        // httpEndpoint: `https://graphql.contentful.com/content/v1/spaces/${process.env.NUXT_PUBLIC_CONTENTFUL_SPACE_ID}/environments/master`,
         httpLinkOptions: {
           headers: {
-            authorization: `Bearer ${process.env.NUXT_PUBLIC_CONTENTFUL_DELIVERY_KEY}`,
+            // authorization: `Bearer ${process.env.NUXT_PUBLIC_CONTENTFUL_DELIVERY_KEY}`,
           },
         }
       },
-      preview: {
-        httpEndpoint: `https://graphql.contentful.com/content/v1/spaces/${process.env.NUXT_PUBLIC_CONTENTFUL_SPACE_ID}/environments/master`,
-        httpLinkOptions: {
-          headers: {
-            authorization: `Bearer ${process.env.NUXT_PUBLIC_CONTENTFUL_PREVIEW_KEY}`,
-          },
-        },
-      },
     },
   },
-  // build: {},
-  // loading: '~/components/GlobalComponents/notification/Loading.vue',
 });
