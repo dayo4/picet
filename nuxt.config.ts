@@ -64,17 +64,6 @@ export default defineNuxtConfig({
       // ignore: ['/dynamic']
     },
   },
-  // modules: [
-  // https://go.nuxtjs.dev/axios
-  // '@nuxtjs/axios',
-  // ['@pinia/nuxt', {
-  //     autoImports: [
-  //         // automatically imports `defineStore`
-  //         'defineStore',
-  //     ]
-  // }
-  // ]
-  // ],
   modules: ["@nuxtjs/apollo"],
   apollo: {
     clients: {
