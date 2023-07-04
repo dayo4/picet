@@ -1,0 +1,99 @@
+/* VUE.JS  TRANSITIONS*/
+
+/* fold-unfold  -> USED IN: Global Notify */
+
+/* .fold-unfold-enter-active {
+    transition: all 0.4s 0.4s ease;
+}
+
+.fold-unfold-leave-active {
+    transition: all 0.2s ease-in-out;
+}
+
+.fold-unfold-enter, .slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+} */
+
+/* fadE-in  -> USED IN: App.vue */
+
+.fade-in-leave-active, .fade-in-enter-active {
+    transition: all 0.2s ease-in-out;
+}
+
+.fade-in-leave-to, .fade-in-enter-from {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+/* slide-fade  -> USED IN: login title switch, globalDropdown, */
+
+.slide-fade-leave-active, .slide-fade-enter-active {
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-fade-enter-from, .slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+/* slide-up-fade  */
+.slide-up-fade-enter-active {
+    transition: all 0.4s ease;
+}
+
+.slide-up-fade-leave-active {
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-up-fade-enter-from, .slide-down-fade-leave-to {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+/* slide-down-fade   -> USED IN: profile mediaTab*/
+
+.slide-down-fade-enter-active {
+    transition: all 0.4s ease;
+}
+
+.slide-down-fade-leave-active {
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-down-fade-enter-from, .slide-down-fade-leave-to {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+/* bounce  -> USED IN: login username*/
+
+/* .bounce-enter-active {
+    animation: bounce-in 0.5s ease-in-out;
+}
+
+.bounce-leave-active {
+    animation: bounce-in 0.5s ease-in-out reverse;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+} */
+
+/* expand -> USED IN: login alert*/
+
+.expand-enter-active, .expand-leave-active {
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.expand-enter-from, .expand-leave-to {
+    transform: rotateX(-95deg);
+}

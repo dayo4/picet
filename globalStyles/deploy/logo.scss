@@ -1,0 +1,24 @@
+.logo-base {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+}
+.logo-x-small {
+    width: 45px;
+    height: 45px;
+}
+
+.logo-small {
+    width: 54px;
+    height: 54px;
+}
+
+.logo-large {
+    width: 120px;
+    height: 120px;
+}
+
+.logo-rotate {
+        animation: rotateR 0.8s linear infinite;
+}
