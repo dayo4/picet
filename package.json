@@ -19,7 +19,6 @@
   "dependencies": {
     "aos": "^2.3.4",
     "axios": "^1.4.0",
-    "moment": "^2.29.4",
     "pinia": "^2.1.3"
   }
 }
