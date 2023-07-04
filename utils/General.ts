@@ -36,8 +36,8 @@ export class General {
         const defaults = {
             title: '',
             content: "",
-            image: 'https://orbrift.com/defaults/pgs/software_websites_design_web_apps_development.jpg',
-            url: 'https://orbrift.com/',
+            image: '',
+            url: 'https://',
             type: 'website'
         }
 
