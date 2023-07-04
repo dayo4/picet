@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <h1>Picet</h1>
+  </div>
 </template>
 <script lang="ts">
 export default {
