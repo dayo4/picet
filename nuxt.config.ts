@@ -35,20 +35,16 @@ export default defineNuxtConfig({
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~/globalStyles/deploy/myCssLibrary/greycore.css",
-    "~/globalStyles/deploy/icons/css/fontello.css",
     "~/globalStyles/deploy/general.scss",
     "~/globalStyles/deploy/logo.scss",
     "~/globalStyles/deploy/transitions.css",
 
     "~/globalStyles/deploy/theme/main.scss",
-    "aos/dist/aos.css",
+    // "aos/dist/aos.css",
   ],
   runtimeConfig: {
     public: {
-      contentfulSpaceId: process.env.NUXT_PUBLIC_CONTENTFUL_SPACE_ID,
-      contentfulDeliveryKey: process.env.NUXT_PUBLIC_CONTENTFUL_DELIVERY_KEY,
-      contentfulPreviewKey: process.env.NUXT_PUBLIC_CONTENTFUL_PREVIEW_KEY,
+      //
     },
   },
   plugins: [
