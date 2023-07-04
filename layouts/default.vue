@@ -1,59 +1,33 @@
 <template>
   <div>
-    <div class="GBLMContainer">
-      <TopNav @search="searchOn = !searchOn" />
-      <HoverPanel />
-      <Process />
-
-      <ClientOnly>
-        <Search v-show="searchOn" @searchoff="searchOn = false" />
-      </ClientOnly>
-
+    <div class="AppCont">
       <section class="Routes">
         <transition name="slide-fade" mode="out-in">
           <slot />
         </transition>
       </section>
-
-      <Footer />
-      <BottomNav />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { $General } from "@/addons";
-
-import { useNavs } from "@/store";
+import { $General } from "@/utils";
 
 export default {
   setup() {
-    const { $aos } = useNuxtApp();
-
-    const $Navs = useNavs();
-    const searchOn = ref(false);
+    // const { $aos } = useNuxtApp();
 
     onMounted(() => {
-      $Navs.setContainer(window ? window : document.body);
-      $Navs.setScrollEvent();
       $General.insertLinks();
-      $General
-        .loadScript()
-        .then(() => {
-          $General.hideCaptchaBadge();
-        })
-        .catch((e) => {});
+      // $aos()
     });
 
-    onMounted(() => $aos());
+    // onMounted(() => );
 
-    onUnmounted(() => {
-      $Navs.removeScrollEvent();
-    });
+    // onUnmounted(() => {
+    // });
 
-    return {
-      searchOn,
-    };
+    return {};
   },
 };
 </script>
@@ -69,7 +43,7 @@ export default {
   transform: translateX(20px);
   opacity: 0;
 }
-.GBLMContainer {
+.AppCont {
   display: table;
   position: relative;
   min-height: 100vh;

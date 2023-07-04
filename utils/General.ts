@@ -20,47 +20,6 @@ export class General {
                 `
     }
 
-    // !Load google recaptcha
-    loadScript(scriptUrl: string = "https://www.google.com/recaptcha/api.js?render=6LfWRMQbAAAAAG0QCV3Blkn1lFuPB64l-zjYnRmU", tagId: string = "gRcptSrt") {
-        return new Promise(function (resolve, reject) {
-            if (!devMode) {
-                let script = document.createElement('script');
-                script.src = scriptUrl;
-                script.id = tagId;
-                script.type = 'text/javascript';
-                script.onerror = reject;
-                script.async = true;
-                script.onload = resolve;
-                let oldTag = document.head.querySelector('#' + tagId)
-                if (oldTag) {
-                    oldTag.parentNode.replaceChild(script, oldTag)
-                } else
-                    document.head.appendChild(script);
-            }
-            reject//('dev')
-        })
-    }
-
-    async hideCaptchaBadge() {
-        if (!devMode) {
-            let retries = 0
-            function invis() {
-                const el = (document.querySelector('.grecaptcha-badge') as HTMLElement);
-                if (el) {
-                    el.style.display = 'none'
-                }
-                else {
-                    setTimeout(() => {
-                        retries++
-                        if (retries <= 6)
-                            invis()
-                    }, 7000);
-                }
-            }
-            invis()
-        }
-    }
-
     async insertLinks() {
         // if (!devMode) {
         var linkTag = document.createElement('link');
@@ -75,8 +34,8 @@ export class General {
     /* vue-meta abstraction method */
     metaInfo(data: MyMetaInfo) {
         const defaults = {
-            title: 'Samuel Adeniyi - Fullstack Developer - ',
-            content: "Crafting innovative websites, applications, and digital solutions for creative brands. Enhanced user experiences with stunning, user-friendly interfaces that engage and convert.",
+            title: '',
+            content: "",
             image: 'https://orbrift.com/defaults/pgs/software_websites_design_web_apps_development.jpg',
             url: 'https://orbrift.com/',
             type: 'website'
