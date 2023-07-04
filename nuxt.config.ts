@@ -64,17 +64,17 @@ export default defineNuxtConfig({
       // ignore: ['/dynamic']
     },
   },
-  modules: ["@nuxtjs/apollo"],
-  apollo: {
-    clients: {
-      default: {
-        // httpEndpoint: `https://graphql.contentful.com/content/v1/spaces/${process.env.NUXT_PUBLIC_CONTENTFUL_SPACE_ID}/environments/master`,
-        httpLinkOptions: {
-          headers: {
-            // authorization: `Bearer ${process.env.NUXT_PUBLIC_CONTENTFUL_DELIVERY_KEY}`,
-          },
-        }
-      },
-    },
-  },
+  // modules: ["@nuxtjs/apollo"],
+  // apollo: {
+  //   clients: {
+  //     default: {
+  //       // httpEndpoint: `https://graphql.contentful.com/content/v1/spaces/${process.env.NUXT_PUBLIC_CONTENTFUL_SPACE_ID}/environments/master`,
+  //       httpLinkOptions: {
+  //         headers: {
+  //           // authorization: `Bearer ${process.env.NUXT_PUBLIC_CONTENTFUL_DELIVERY_KEY}`,
+  //         },
+  //       }
+  //     },
+  //   },
+  // },
 });
