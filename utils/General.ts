@@ -9,7 +9,7 @@ interface MyMetaInfo {
 
 }
 
-const devMode = process.env.NODE_ENV === 'development'
+// const devMode = process.env.NODE_ENV === 'development'
 
 export class General {
 
