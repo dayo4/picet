@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     },
   },
   plugins: [
-    // "~/plugins/navs/index.ts"
+    // 
   ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
