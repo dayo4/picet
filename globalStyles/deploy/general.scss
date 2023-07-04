@@ -76,37 +76,19 @@ figure {
 
 .bg-img-masked {
   // position: relative;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
 
     &::after {
-        // content: "";
-        // position: absolute;
-        // top: 0;
-        // bottom: 0;
-        // right: 0;
-        // left: 0;
-        // z-index: -1 !important;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -1 !important;
         background-color: rgba(72, 72, 72, 0.70);
     }
 }
-
-// .img-masked-0 {
-//   position: relative;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         bottom: 0;
-//         right: 0;
-//         left: 0;
-//         background-color: transparent;
-//     }
-// }
