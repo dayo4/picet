@@ -3,6 +3,7 @@
     <h1>Picet</h1>
 
     <section class="flex justify-center">
+    <section class="flex justify-center">
       <div class="Section">
         <h3 class="Head">Description</h3>
         <span v-show="msg_err" class="Error t-red-1">{{ msg_err }}</span>
@@ -21,6 +22,7 @@
           Send {{ target === "app" ? "Mail" : "" }}
         </Button>
       </div>
+    </section>
     </section>
   </div>
 </template>
