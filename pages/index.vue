@@ -4,7 +4,7 @@
 
     <section class="flex justify-center">
       <div class="Section">
-        <span class="Head">Description</span>
+        <h3 class="Head">Description</h3>
         <span v-show="msg_err" class="Error t-red-1">{{ msg_err }}</span>
         <div
           ref="msgInput"
