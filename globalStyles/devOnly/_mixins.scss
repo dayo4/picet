@@ -4,7 +4,7 @@
 	}
 }
 @mixin xs-only {
-	@media only screen and (max-width: 599px) {
+	@media only screen and (max-width: 639px) {
 		@content;
 	}
 }
@@ -13,53 +13,64 @@
 		@content;
 	}
 }
+/* Deduced based on Tailwind CSS default breakpoints configurations */
 @mixin sm-only {
-	@media only screen and (min-width: 600px) and (max-width: 959px) {
+	@media only screen and (min-width: 640px) and (max-width: 767px) {
 		@content;
 	}
 }
 @mixin sm-and-up {
-	@media (min-width: 600px) {
+	@media (min-width: 640px) {
 		@content;
 	}
 }
 @mixin sm-and-down {
-	@media (max-width: 959px) {
+	@media (max-width: 767px) {
 		@content;
 	}
 }
 @mixin md-only {
-	@media only screen and (min-width: 960px) and (max-width: 1263px) {
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
 		@content;
 	}
 }
 @mixin md-and-up {
-	@media (min-width: 960px) {
+	@media (min-width: 768px) {
 		@content;
 	}
 }
 @mixin md-and-down {
-	@media (max-width: 1263px) {
+	@media (max-width: 1023px) {
 		@content;
 	}
 }
 @mixin lg-only {
-	@media only screen and (min-width: 1264px) and (max-width: 1903px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1279px) {
 		@content;
 	}
 }
 @mixin lg-and-up {
-	@media (min-width: 1264px) {
+	@media (min-width: 1024px) {
 		@content;
 	}
 }
 @mixin lg-and-down {
-	@media (max-width: 1903px) {
+	@media (max-width: 1279px) {
 		@content;
 	}
 }
 @mixin xl-only {
-	@media only screen and (min-width: 1904px) {
+	@media only screen and (min-width: 1280px) and (max-width: 1535px) {
+		@content;
+	}
+}
+@mixin xl-and-up {
+	@media (min-width: 1280px) {
+		@content;
+	}
+}
+@mixin xl-and-down {
+	@media (max-width: 1535px) {
 		@content;
 	}
 }

@@ -6,7 +6,7 @@ const devMode = process.env.NODE_ENV === 'development'
 
 const $baseApi = axios.create({ baseURL: 'https://api.openai.com/v1/images/', })
 
-$baseApi.defaults.headers.common['Authorization'] = 'Bearer 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'
+$baseApi.defaults.headers.common['Authorization'] = 'Bearer ' + process.env.NUXT_PUBLIC_OPENAI_API_KEY
 
 $baseApi.interceptors.request.use(
   function (config) {

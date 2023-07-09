@@ -12,9 +12,7 @@ export default defineNuxtConfig({
         { hid: "description", name: "description", content: "" },
         { name: "format-detection", content: "telephone=no" },
       ],
-      link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
-      ]
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
   ssr: true,
@@ -40,7 +38,7 @@ export default defineNuxtConfig({
     "~/globalStyles/deploy/transitions.css",
 
     "~/globalStyles/deploy/theme/main.scss",
-    '~/assets/css/main.css'
+    "~/assets/css/main.css",
     // "aos/dist/aos.css",
   ],
   runtimeConfig: {
@@ -49,7 +47,7 @@ export default defineNuxtConfig({
     },
   },
   plugins: [
-    // 
+    //
   ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
@@ -59,24 +57,13 @@ export default defineNuxtConfig({
     },
   ],
   nitro: {
-    prerender: {
-      crawlLinks: true,
-      //   routes: ['/user/1', '/user/2'],
-      // ignore: ['/dynamic']
-    },
+    // prerender: {
+    //   crawlLinks: true,
+    // },
   },
-  // modules: ["@nuxtjs/apollo"],
-  // apollo: {
-  //   clients: {
-  //     default: {
-  //       // httpEndpoint: `https://graphql.contentful.com/content/v1/spaces/${process.env.NUXT_PUBLIC_CONTENTFUL_SPACE_ID}/environments/master`,
-  //       httpLinkOptions: {
-  //         headers: {
-  //           // authorization: `Bearer ${process.env.NUXT_PUBLIC_CONTENTFUL_DELIVERY_KEY}`,
-  //         },
-  //       }
-  //     },
-  //   },
+  modules: ["nuxt-headlessui"],
+  // headlessui: {
+  //   prefix: "Hui",
   // },
   postcss: {
     plugins: {

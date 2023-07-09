@@ -2,16 +2,14 @@
   <div>
     <div class="AppCont">
       <section class="Routes">
-        <transition name="slide-fade" mode="out-in">
           <slot />
-        </transition>
       </section>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { $General } from "@/utils";
+import { $General } from "@/utils/index";
 
 export default {
   setup() {
