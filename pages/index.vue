@@ -5,7 +5,7 @@
 </template>
 <script lang="ts">
 
-import { $baseApi } from "@/addons/utils/Axios"
+import { $baseApi } from "@/utils/Axios"
 
 export default {
   name: "Home",
