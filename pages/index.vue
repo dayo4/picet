@@ -3,7 +3,7 @@
     <h1>Picet</h1>
 
     <div class="Section">
-      <span class="Head"></span>
+      <span class="Head">Description</span>
       <span v-show="msg_err" class="Error t-red-1">{{ msg_err }}</span>
       <div
         ref="msgInput"
