@@ -3,7 +3,7 @@
     <h1>Picet</h1>
 
     <div class="Section">
-      <span class="Head">Your Message</span>
+      <span class="Head"></span>
       <span v-show="msg_err" class="Error t-red-1">{{ msg_err }}</span>
       <div
         ref="msgInput"
@@ -13,7 +13,7 @@
         placeholder="Type your message"
       ></div>
     </div>
-    
+
   </div>
 </template>
 <script lang="ts">
