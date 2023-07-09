@@ -2,7 +2,7 @@
   <div>
     <h1>Picet</h1>
 
-    <section class="flex items-center">
+    <section class="flex justify-center">
       <div class="Section">
         <span class="Head">Description</span>
         <span v-show="msg_err" class="Error t-red-1">{{ msg_err }}</span>
