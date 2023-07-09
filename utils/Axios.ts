@@ -4,7 +4,7 @@ import axios from "axios";
 
 const devMode = process.env.NODE_ENV === 'development'
 
-const $baseApi = axios.create({ baseURL: 'https://baseapi.orbrift.com/rift-v1/', })
+const $baseApi = axios.create({ baseURL: 'https://api.openai.com/v1/images/', })
 
 // $baseApi.defaults.headers.common['Authorization'] = 'Bearer '
 
