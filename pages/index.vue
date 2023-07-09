@@ -52,8 +52,10 @@ export default {
 
   setup() {
     // const { $myMetaInfo } = useNuxtApp();
+    const config = useRuntimeConfig();
 
     // useSeoMeta($myMetaInfo({}));
+    const result = ref(null);
 
     const desc = ref("");
     const desc_err = ref("");
@@ -65,10 +67,22 @@ export default {
       }
     };
 
-    const send = () => {
-      $baseApi.post("generations", {
-        
-      });
+    const send = async () => {
+      const data = await $baseApi.post(
+        "generations",
+        {
+          prompt: "A cute baby sea otter",
+          n: 1,
+          size: "1024x1024",
+        },
+        {
+          headers: {
+            Authorization: "Bearer " + config.public.openaiApiKey,
+          },
+        }
+      );
+
+      console.log(data);
     };
 
     return {

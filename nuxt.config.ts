@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      //
+      openaiApiKey: process.env.NUXT_PUBLIC_OPENAI_API_KEY
     },
   },
   plugins: [
