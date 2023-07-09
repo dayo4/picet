@@ -14,6 +14,17 @@
       ></div>
     </div>
 
+      <!-- Send button -->
+      <div class="flex j-c-center my-8">
+        <Button
+          @clicked="send"
+          type="action"
+          size="medium"
+          icon="icon-forward"
+        >
+          Send {{ target === "app" ? "Mail" : "" }}
+        </Button>
+      </div>
   </div>
 </template>
 <script lang="ts">
